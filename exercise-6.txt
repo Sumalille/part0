@@ -1,0 +1,14 @@
+Exercise 6 (new note spa):
+The chain of events when the user creates a new note using the single page version of the app can be depicted as follows:
+
+browser => server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+server => browser: 201 Created
+
+note over browser:
+browser sends a POST request containing the new note as a JSON-data app
+end note
+
+note over server:
+the server sends a respose indicating the new note was succussfully created and is returned in the content of the Location header.
+end note
+
